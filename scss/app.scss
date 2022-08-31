@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$primary:hsl(176, 68%, 64%);
+$secondary:hsl(198, 60%, 50%);
+$danger:hsl(0, 100%, 63%);
+
+$navbar-nav-link-padding-x: 2rem;
+
+$btn-padding-x:4.5rem;
+$btn-padding-y:0.75rem;
+$btn-border-radius: 30px;
+
+$input-border-radius:25px;
+$input-padding-x: 20px;
+$input-padding-y: 10px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+:root{
+  --body-ff:'Open Sans', sans-serif;
+  --sec-ff:'Raleway', sans-serif;
+  --white: #e0e0e0;
+  --main-bg: hsl(218, 28%, 13%);
+  --sec-bg: hsl(217, 28%, 15%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --card-bg: hsl(219, 30%, 18%);
+}
+.w-45{
+  width: 45%;
+}
+.w-60{
+  width: 60%;
+}
+.w-90{
+  width: 90%;
+}
+.animate-delay-1{
+  animation-delay: .7s;
+}
+.animate-delay-2{
+  animation-delay: 1s;
+}
+.animate-delay-3{
+  animation-delay: 1.5s;
+}
+.animate-delay-4{
+  animation-delay: 2s;
+}
+.animate-delay-5{
+  animation-delay: 2.5s;
+}
+.header{
+  background:var(--sec-bg);
+  background-position: bottom;
+  background-size: 100% 40vh;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-desktop.svg");
+}
+nav{
+  width: 65%;
+}
+ul{
+  width: 25%;
+}
+.header-link{
+  text-decoration: none;
+  color: #cdcdcd;
+}
+.header-link:hover{
+  text-decoration: underline;
+  color: var(--white);
+}
+.content{
+  background: var(--main-bg);
+}
+.logo{
+  width: 80%;
+}
+.nav-link:hover{
+  text-decoration: underline;
+}
+.secFont{
+  font-family: var(--sec-ff);
+}
+.hero-title{
+  width: 75%;
+}
+.hero-text{
+  width: 45%;
+  font-size: 17px;
+  color: #cbcbcb;
+}
+.stay-title{
+  font-size: 35px;
+}
+.block-text{
+  display: block;
+}
+.stay-text{
+  font-size: 15px;
+  color: #cbcbcb;
+}
+.link{
+  position: relative;
+}
+.link:hover a{
+  color: white;
+}
+.link:hover .bottom-outline{
+  background-color: white;
+}
+.bottom-outline{
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 165px;
+  height: 1px;
+  background-color: $primary;
+}
+.card-bg{
+  background-color: var(--card-bg);
+}
+.profile-img{
+  border-radius: 50%;
+}
+.profile-sub-title{
+  font-size: 13px;
+}
+.bg-quote{
+  top:22px;
+  left: 5px;
+}
+.sign-up-container{
+  margin-bottom: -240px;
+}
+.sign-up-bg{
+  background-color: var(--sec-bg);
+}
+.sign-up-title{
+  font-size: 27px;
+}
+.sign-up-text{
+  color: #cbcbcb;
+}
+.sign-up-btn{
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  background-image:linear-gradient(to right,hsl(176, 68%, 64%),hsl(198, 60%, 50%)) ;
+}
+.sign-up-btn:hover{
+  background-image: none;
+  background-color: $primary;
+}
+.footer{
+  background-color: var(--footer-bg);
+}
+.footer-logo{
+  height: 30%;
+}
+.footer-container{
+  width: 75%;
+}
+.footer-link{
+  color: #cdcdcd;
+  text-decoration: none;
+}
+.footer-link:hover{
+  color: var(--white);
+}
+.footer-contact{
+  font-size: 15px;
+  color: #cbcbcb;
+  margin-left: 20px;
+}
+.social-icon{
+  width: 35px;
+  height: 35px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  background-color: var(--footer-bg);
+  cursor: pointer;
+}
+.social-icon:hover{
+  color: $primary;
+  border-color: $primary;
+}
+
+@media screen and (max-width: 1367px) {
+  nav{
+    width: 80%;
+  }
+  .footer-container{
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 424px){
+  .header{
+    background-position: bottom;
+    background-size: 190% 55vh;
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+  nav{
+    width: 100%;
+    padding: 0 10px;
+  }
+  ul{
+    width: 90%;
+  }
+  .hero{
+    margin-top: 50px !important;
+  }
+  .img{
+    width: 90%;
+  }
+  .hero-title, .hero-text{
+    width: 80%;
+  }
+  .block-text{
+    display: inline;
+  }
+  .stay-title{
+    font-size: 22px;
+  }
+  .sign-up-title{
+    font-size: 22px;
+  }
+  .sign-up-btn{
+    width: 100%;
+  }
+  .footer-container{
+    width: 100%;
+    padding: 0 10px;
+  }
+}
